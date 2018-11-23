@@ -21,7 +21,7 @@ body{
 .hours{
     text-align: right;
 }
-.contact a{
+.contact-details a{
     text-decoration: none;
 }
 .main-header{
@@ -70,7 +70,7 @@ body{
 .main-nav a{
    text-decoration: none;
    color: var(--site-color);
-   padding-right: 16px;
+   padding-right: 20px;
 }
 .toggle-link{
     display: none;
@@ -99,13 +99,17 @@ footer{
     .toggle-link{
         display: inline;
         cursor: pointer;
+        color: var(--site-color);
+        font-size: 1.2rem;
     }
     .main-nav{
         flex-direction: column;
-        padding-left: 12px;
+        padding-left: o;
     }
     .nav-link{
         display: none;
+        padding: 8px 0;
+
     }
     .show-link{
         display: inline-block;

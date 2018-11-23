@@ -15,13 +15,13 @@
             <div>2 Marsellus Drive, Unit 2,</div>
             <div>Barries, Ontario, L4N 0Y4</div>
             <div> <a href="mailto:kelytacreations2@gmail.com">kelytacreations2@gmail.com</a></div>
-            <div>Call: <a href="tel:17055033400">1(705)503-3400</a></div>
+            <div><a href="tel:17055033400">1(705)503-3400</a></div>
         </section>
         <section class="hours">
-            <div> Tues-Thurs: 12pm - 6pm</div>
-            <div>Fri: 11am - 5pm</div>
-            <div>Sat: 10:30am - 4pm</div>
-            <div>Sun/Mon: <strong>closed</strong></div>
+            <div> <strong>Tues-Thurs</strong>: 12pm - 6pm</div>
+            <div><strong>Fri</strong>: 11am - 5pm</div>
+            <div><strong>Sat</strong>: 10:30am - 4pm</div>
+            <div><strong>Sun/Mon</strong>: <strong>CLOSED</strong></div>
         </section>
 
     </section>
@@ -44,7 +44,7 @@
         </div>
     </section>
     <nav class="main-nav">
-        <a class="toggle-link">&#9776;</a>
+        <div class="toggle-link">&#9776;</div>
         <a href="" class="nav-link">Home</a>
         <a href="" class="nav-link">Products</a>
         <a href="" class="nav-link">Testimonials</a>
@@ -56,7 +56,15 @@
     <footer>
         <p>&copy; Kelyta's Creations, 2018</p>
     </footer>
+
     <script>
+        const toggleLink = document.querySelector('.toggle-link');
+        const navLinks = document.querySelectorAll('.nav-link');
+        toggleLink.addEventListener('click', function (event) {
+            navLinks.forEach(function (link) {
+                link.classList.toggle('show-link');
+            })
+        })
 
     </script>
 </body>
