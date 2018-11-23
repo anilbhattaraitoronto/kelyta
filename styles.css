@@ -15,35 +15,34 @@ body{
     grid-gap: 10px;
     font-size: .8rem;
     line-height: 1.3;
-    border-bottom: 1px solid lightgray;
-    /* background: var(--main-color); */
 }
 .hours{
     text-align: right;
 }
 .contact-details a{
     text-decoration: none;
+    color: var(--site-color);
 }
 .main-header{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
+   /* display: grid;
+   grid-template-columns: 1fr 1fr; */
    padding: 40px 0;
+   background-image: url(images/banner-background.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 .logo{
-    margin: auto;
 }
 .masthead{
     margin: auto;
+    text-align: center;
     font-size: 1.8rem;
-}
-
-.masthead{
     font-style: italic;
 }
+
 .masthead::after{
     content: "For all your formal wear needs, with love";
     display: block;
-    text-align: center;
     font-style: italic;
     font-size: .8rem;
     padding: 10px 0;
@@ -75,7 +74,7 @@ body{
 .toggle-link{
     display: none;
 }
-img{
+.logo img{
     display: block;
     max-width: 100%;
     width: 150px;
@@ -83,7 +82,6 @@ img{
 }
 .wrapper{
     height: 200px;
-    background: var(--main-color);
 }
 footer{
     display: flex;
@@ -127,6 +125,6 @@ footer{
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .masthead{
-        display: none;
+        text-align: left;
     }
 }
