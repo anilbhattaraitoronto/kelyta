@@ -13,6 +13,7 @@ body{
     grid-gap: 10px;
     font-size: .8rem;
     line-height: 1.5;
+    padding: 20px 0;
 }
 .hours{
     text-align: right;
@@ -23,6 +24,8 @@ body{
 .main-header{
    display: grid;
    grid-template-columns: 1fr 1fr;
+   padding: 40px auto;
+   border-top: 2px solid rgb(180, 44, 90);
 }
 .logo{
     margin: auto;
@@ -32,8 +35,7 @@ body{
 }
 
 .masthead{
-    color: rgb(216, 90, 132);
-
+    font-style: italic;
 }
 .masthead::after{
     content: "For all your formal wear needs, with love";
@@ -43,6 +45,7 @@ body{
     font-size: .8rem;
     padding: 10px 0;
     font-weight: 600;
+    color: rgb(180, 44, 90);
 }
 
 .social-media{
@@ -106,5 +109,12 @@ footer{
         display: block;
         margin: 0 auto;
         width: 100%;
+    }
+    .hours{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .masthead{
+        display: none;
     }
 }
