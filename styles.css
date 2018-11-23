@@ -4,17 +4,17 @@
     --main-color: rgb(248, 244, 244);
     --site-color:  rgb(180, 44, 90);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 101%;
 }
 body{
     margin: 5px;
 }
 .contact-details{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
     font-size: .8rem;
     line-height: 1.3;
+    margin-bottom: 2px;
 }
 .hours{
     text-align: right;
@@ -26,10 +26,11 @@ body{
 .main-header{
    /* display: grid;
    grid-template-columns: 1fr 1fr; */
-   padding: 40px 0;
+   padding: 80px 0;
    background-image: url(images/banner-background.jpeg);
    background-repeat: no-repeat;
    background-size: cover;
+   
 }
 .logo{
 }
@@ -64,7 +65,7 @@ body{
     justify-content: center;
     /* border-top: 1px solid var(--site-color);
     border-bottom: 1px solid var(--site-color); */
-    padding-left: 16px 0;
+    padding-left: 16px;
 }
 .main-nav a{
    text-decoration: none;
@@ -81,7 +82,15 @@ body{
     margin: 10px auto;
 }
 .wrapper{
-    height: 200px;
+    margin: 20px 0;
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.product img{
+    max-width: 400px;
+    width: 100%;
 }
 footer{
     display: flex;
@@ -89,10 +98,23 @@ footer{
     margin:20px auto;
 }
 @media only screen and (max-width: 468px){
+    .contact-details{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 10px;
+        font-size: .8rem;
+        line-height: 1.3;
+        margin: 0 auto;
+        margin-bottom: 2px;
+    }
+    .contact-details{
+        
+    }
     .main-header{
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
+        padding: 35px 0;
      }
     .toggle-link{
         display: inline;
@@ -102,7 +124,7 @@ footer{
     }
     .main-nav{
         flex-direction: column;
-        padding-left: o;
+        padding-left: 0;
     }
     .nav-link{
         display: none;
@@ -126,5 +148,11 @@ footer{
     }
     .masthead{
         text-align: left;
+    }
+}
+@media only screen and (min-width: 600px){
+    .shop-location, .hours{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     }
 }
