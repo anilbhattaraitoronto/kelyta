@@ -66,6 +66,7 @@ body{
     padding: 16px 16px 0;
     margin: 1px auto;
     background: var(--main-color);
+    position: -webkit-sticky;
     position: sticky;
     top:0;
 }
