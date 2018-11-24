@@ -92,6 +92,14 @@ body{
     max-width: 400px;
     width: 100%;
 }
+.product-title{
+    padding: 0 10px;
+}
+.product-description p{
+    padding: 10px;
+    line-height: 1.6;
+    max-width: 400px;
+}
 footer{
     display: flex;
     justify-content: center;
@@ -153,6 +161,6 @@ footer{
 @media only screen and (min-width: 600px){
     .shop-location, .hours{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
 }
