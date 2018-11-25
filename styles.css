@@ -58,6 +58,7 @@ img{
     margin: 0 auto;
     background: white;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
 }
 .main-nav a{
