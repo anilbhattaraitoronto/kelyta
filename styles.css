@@ -3,7 +3,7 @@
     padding: 0;
     --main-color: rgb(248, 244, 244);
     --site-color:  rgb(180, 44, 90);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 body{
@@ -28,12 +28,11 @@ img{
     color: var(--site-color);
 }
 .main-header{
-   /* display: grid;
-   grid-template-columns: 1fr 1fr; */
    padding: 80px 0;
    background-image: url(images/banner-background.jpeg);
    background-repeat: no-repeat;
    background-size: cover;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .masthead{
     margin: auto;
@@ -85,7 +84,7 @@ img{
 .section-title{
     font-size: 1.6rem;
     text-align: center;
-    border-top: 1px solid var(--site-color);
+    /* border-top: 1px solid var(--site-color); */
     border-bottom: 1px solid var(--site-color);
     padding: 20px 0;
 }
@@ -106,7 +105,9 @@ img{
 }
 .product-title{
     padding: 10px;
-    border-top: 1px solid var(--site-color);
+}
+.product-description p{
+    border-bottom: 1px solid var(--site-color);
 }
  #product-section p, #photo-booth-section p, #about-section p, #testimonial-section p{
     padding: 10px;
@@ -125,9 +126,15 @@ img{
     display: block;
     width: 100px;
 }
+.testimony{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .testimony:nth-child(even){
     background: lightgray;
-    color: var(--site-color);
+    color: rgb(12, 71, 73);
+}
+.testimony p:nth-child(even){
+    font-weight: bold;
 }
 footer{
     margin:20px auto;
